@@ -2,19 +2,17 @@
 
 
 #############################################################################################################
-##Program Objective: to check whether a String is palindrome or not                                        ##
+##Program Objective: to Calculate the area of circle using Pi value and pow function of math module.       ##
 ##Coded by: KNR                                                                                            ##
 ##Date: 17/09/2019 22:20                                                                                   ##
 ##Lang: Python 3.7.4                                                                                       ##
 ##Version: 1.0                                                                                             ##
 #############################################################################################################
 
+from math import pi, pow
 print("--------------------------------------------------")
-yourStr = input("Enter your string:")
-if yourStr == yourStr[::-1]:
-    print("{} is a Polindrome".format(yourStr))
-else:
-    print("{} is not a Polindrome".format(yourStr))  
-
+readiusOfCir = float(input("Enter radius of circle:"))
+areaOfCir  =  pi * pow(readiusOfCir,2)
+print("Area of circle: {}".format(areaOfCir))
 print("--------------------------------------------------")
 
